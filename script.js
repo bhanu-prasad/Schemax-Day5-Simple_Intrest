@@ -9,7 +9,7 @@ function isNumberKey(evt)
     function isNumberKeytime(evt)
     {
       var charCode = (evt.which) ? evt.which : event.keyCode;
-      if (charCode < 48 || charCode > 57)
+      if ((charCode < 48 || charCode > 57) && charCode!==46)
       return false;
     
       return true;
@@ -24,7 +24,7 @@ function isNumberKey(evt)
         var intrest = p*t*r/100;
 
         var final = intrest+p;
-        console.log(typeof intrest);
+        
         document.getElementById("intrest").innerHTML = "₨. "+intrest;
         document.getElementById("final").innerHTML = "₨. "+final;
          
