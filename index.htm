@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 5|Simple Intrest</title>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="display">
         <h1>Simple Intrest Calculator!</h1>
         <div class="banner">
-            <form >
+            <form action="">
                 <label for="principle">Initial Amount</label>
                 <input type="text" id="principle" onkeypress="return isNumberKey(event)" autocomplete="off" autofocus placeholder="Principle Amount">
                 <label for="time">Time in Years</label>
@@ -21,10 +21,11 @@
                 <label for="rate">Rate of Intrest</label>
                 <input type="text" id="rate" onkeypress="return isNumberKey(event)" autocomplete="off" placeholder="Annual Rate of Inrest">
                 <span style="margin:0px 5px;">Rate in %..!</span>
-                <div>
-                    <button onclick="calculate()">Calculate Intrest</button>
-                </div>
+                
             </form>
+            <div class="sub">
+                <button onclick="calculate()">Calculate Intrest</button>
+            </div>
             <div class="output">
                 <label for="intrest">Intrest Amount: </label>
                 <h2 id="intrest"></h2>
@@ -35,4 +36,4 @@
     </div>
 </body>
 </html>
-
+<script src="script.js"></script>
