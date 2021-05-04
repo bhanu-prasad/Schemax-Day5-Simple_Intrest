@@ -6,14 +6,7 @@ function isNumberKey(evt)
     
       return true;
     }
-    function isNumberKeytime(evt)
-    {
-      var charCode = (evt.which) ? evt.which : event.keyCode;
-      if ((charCode < 48 || charCode > 57) && charCode!==46)
-      return false;
     
-      return true;
-    }
 
     function calculate(){
         var p = Number(document.getElementById("principle").value);
